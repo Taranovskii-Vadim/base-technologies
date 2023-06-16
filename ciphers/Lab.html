@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Все лабы</title>	
+</head>
+<body>
+	<div>
+		<p>Шифр Цезаря(Сдан!)</p>
+		<div id="CesarPsyfer">
+			<input type="text" id="Message" placeholder="Оригинал" >
+			<input type="text" id="Step" placeholder="Введите шаг">
+			<input type="text" id="Result" placeholder="Шифр" >
+			<button id="Action" onclick="Encryption()">Зашифровать</button>
+			<button id="ActionD" onclick="Decription()">Дешифровать</button>
+		</div>
+		<p>Шифр Атбаш(Сдан!)</p>
+		<div id="AtbashPsyfer">
+			<input type="text" id="MessageA" placeholder="Оригинал" >
+			<input type="text" id="ResultA" placeholder="Шифр" >
+			<button onclick="EncriptionA()">Зашифровать</button>
+			<button onclick="DecriptionA()">Дешифровать</button>	
+		</div>
+		<p>Шифр Квадрат Полибия(Сдан!)</p>
+		<div id="PolPsyfer">
+			<input type="text" id="MessageP" placeholder="Оригинал" >
+			<input style="width: 250px;" type="text" id="ResultP" placeholder="Шифр">
+			<button onclick="DecriptionPL()">Дешифровать</button>				
+		</div>
+		<p>Шифр Плейфера(Сдан!)</p>
+		<div id="PlayPsyfer">
+				<input type="text" id="messagePL" placeholder="Оригинал" onkeyup= "EncriptionPlay()">
+				<input type="text" id="resultPL" placeholder="Шифр">
+				<input type="checkbox" id="flag" onclick="EncriptionPlay()"> Дешифровка
+			<br>
+			<input type="text" id ="0playfair0" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "а">
+			<input type="text" id ="0playfair1" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "б">
+			<input type="text" id ="0playfair2" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "в">
+			<input type="text" id ="0playfair3" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "г">
+			<input type="text" id ="0playfair4" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "д">
+			<input type="text" id ="0playfair5" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "е">
+			<input type="text" id ="0playfair6" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "ж">
+			<input type="text" id ="0playfair7" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "з">
+			<br>
+			<input type="text" id ="1playfair0" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "и">
+			<input type="text" id ="1playfair1" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "й">
+			<input type="text" id ="1playfair2" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "к">
+			<input type="text" id ="1playfair3" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "л">
+			<input type="text" id ="1playfair4" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "м">
+			<input type="text" id ="1playfair5" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "н">
+			<input type="text" id ="1playfair6" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "о">
+			<input type="text" id ="1playfair7" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "п">
+			<br>
+			<input type="text" id ="2playfair0" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "р">
+			<input type="text" id ="2playfair1" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "с">
+			<input type="text" id ="2playfair2" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "т">
+			<input type="text" id ="2playfair3" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "у">
+			<input type="text" id ="2playfair4" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "ф">
+			<input type="text" id ="2playfair5" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "х">
+			<input type="text" id ="2playfair6" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "ц">
+			<input type="text" id ="2playfair7" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "ч">
+			<br>
+			<input type="text" id ="3playfair0" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "ш">
+			<input type="text" id ="3playfair1" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "щ">
+			<input type="text" id ="3playfair2" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "ъ">
+			<input type="text" id ="3playfair3" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "ы">
+			<input type="text" id ="3playfair4" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "ь">
+			<input type="text" id ="3playfair5" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "э">
+			<input type="text" id ="3playfair6" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "ю">
+			<input type="text" id ="3playfair7" size = "1" maxlength = "1" onkeyup = "EncriptionPlay()" value = "я">
+		</div>
+		<p>Таблица Виженера(Сдан!)</p>
+		<div id="TableVis">
+			<input type="text" id="MessageTV" placeholder="Оригинал" >
+			<input type="text" id="KeyTV" placeholder="Введите ключ" >
+			<input type="text" id="ResultTV" placeholder="Шифр">	
+			<button onclick="EncryptionTV()">Зашифровать</button>
+			<button onclick="DecryptionTV()">Дешифровать</button>
+		</div>
+		<p>Аффинное шифрование(Сдан!)</p>
+		<div id="Affina">
+			<input type="text" id="MessageAF" placeholder="Оригинал" >
+			<input type="text" id="affineA" placeholder="Введите A" >
+			<input type="text" id="affineB" placeholder="Введите B" >
+			<input type="text" id="ResultAF" placeholder="Шифр">	
+			<button onclick="EncriptionAFF()">Зашифровать</button>
+			<button onclick="DecryptionAFF()">Дешифровать</button>
+		</div>
+		<p>Метод перестановок на следующей паре</p>
+		<div id="Perestanovka">
+			<input type="text" id="MessagePer" placeholder="Оригинал">
+			<input type="text" id="KeyPerRead" placeholder="Введите размер матрицы">
+			<input type="text" id="ResultPer" placeholder="Шифр">
+			<button onclick="EncriptionPere()">Зашифровать</button>
+			<button onclick="DecryptionPere()">Дешифровать</button>
+		</div>
+		<p>Гаммирование(Сдан!)</p>
+		<div id="Gamma">
+			<input type="text" id="MessageGamm" placeholder="Оригинал" >
+			<input type="text" id="gammakey" placeholder="Введите Гамму">
+			<input type="text" id="ResultGamm" placeholder="Шифр" >
+			<button onclick="EncriptionGamm()">Зашифровать</button>
+			<button onclick="DecryptionGamm()">Дешифровать</button>
+		</div>
+		<p>DES шифрование, только английский(Сдан!)</p>
+		<div id="DES">
+			<input type="text" id="MessageDES" placeholder="Оригинал" onkeyup="EncriptionDES()">
+			<input type="text" id="KeyDES" placeholder="Введите ключ" onkeyup="EncriptionDES()">
+			<input type="text" id="ResultDES" placeholder="Шифр" >
+			<input type="checkbox" id="flagDES" onclick="EncriptionDES()"> Дешифровка
+		</div>
+	</div>
+	<script src="Cesar.js" type="text/javascript"></script>
+	<script src="Atbash.js" type="text/javascript"></script>
+	<script src="Poly.js" type="text/javascript"></script>
+	<script src="Viz.js" type="text/javascript"></script>
+	<script src="Swaps.js" type="text/javascript"></script>
+	<script src="Affina.js" type="text/javascript"></script>
+	<script src="Gamma.js" type="text/javascript"></script>
+	<script src="Playfer.js" type="text/javascript"></script>
+	<script src="DES.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgressBar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="progress-bar"></div>
+      <div class="progress-bar1"></div>
+    </main>
+    <script src="./scripts.js"></script>
+    <script>
+      const newBar = new ProgressBar({
+        start: 1,
+        end: 100,
+        background: "red",
+        height: 20,
+        border: "2px solid green"
+      });
+      const newRoundBar = new RoundedProgressBar({
+        rounded: "30px"
+      });
+      newRoundBar.init(".progress-bar1");
+      newBar.init(".progress-bar");
+    </script>
+  </body>
+</html>
