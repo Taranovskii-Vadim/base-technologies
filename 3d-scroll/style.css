@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 100;
+  text-transform: uppercase;
+  width: min-content;
+  line-height: 1;
+}
+
+:root {
+  --index: calc(1vw+1vh);
+  --guuter: 30px;
+  --size-small: 26;
+  --size-big: 36;
+  --depth: 4000px;
+  --transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+}
+
+@font-face {
+  font-family: raleway_c;
+  src: url("./fonts/raleway-v22-cyrillic-300.woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: raleway_c;
+  src: url("./fonts/raleway-v22-cyrillic-100.woff2");
+  font-weight: 100;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-size: calc(var(--index) * 0.8);
+  font-family: raleway_c, sans-serif;
+  line-height: 1.75;
+  height: var(--depth);
+  font-weight: 300;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  perspective: 1500px;
+}
+
+.gallery {
+  transform-style: preserve-3d;
+  height: 100%;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition), opacity 0.75s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.frame h2 {
+  text-align: center;
+  font-size: calc(var(--index) * 3.3);
+}
+
+.frame-media {
+  position: relative;
+  width: calc(var(--index) * var(--size-small));
+  height: calc(var(--index) * var(--size-big));
+  background-position: center;
+  background-size: cover;
+}
+
+.frame-media_left {
+  right: calc(var(--size-small) / 2 * var(--index) + var(--guuter));
+}
+
+.frame-media_right {
+  left: calc(var(--size-small) / 2 * var(--index) + var(--guuter));
+}
+
+.frame_bg {
+  background-color: rgb(0 0 0/0.87);
+}
+
+video.frame-media {
+  width: calc(var(--index) * var(--size-big));
+  height: calc(var(--index) * var(--size-small));
+}
+
+video.frame-media_right {
+  left: calc(var(--size-big) / 2 * var(--index) + var(--guuter));
+}
+
+video.frame-media_left {
+  right: calc(var(--size-big) / 2 * var(--index) + var(--guuter));
+}
+
+.text-right > * {
+  position: relative;
+  left: 18vw;
+}
+
+.text-left > * {
+  position: relative;
+  right: 18vw;
+}
+
+.frame h3 {
+  font-size: calc(var(--index) * 3);
+}
+
+.frame p {
+  max-width: 30vw;
+  margin-top: 5vh;
+}
+
+.soundButton {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  cursor: pointer;
+  width: 24px;
+  transition: 0.25s ease;
+}
+
+.soundButton.paused {
+  opacity: 0.25;
+}
