@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>Delivery</title>
+  <link rel="stylesheet" href="./css/style-min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="index.html" class="logo"><img src="./img/logo.svg" alt="logo" /></a>
+      <input type="text" class="input search" placeholder="Адрес доставки" />
+      <div class="buttons">
+        <button class="button enter-btn">
+          <img src="./img/user.svg" alt="user" /><span class="btn-text">Войти</span>
+        </button>
+        <button class="button basket-btn">
+          <img src="./img/shopping-cart.svg" alt="cart" /><span class="item-counter">0</span><span class="btn-text">Корзина </span>
+        </button>
+      </div>
+    </header>
+    <main class="main main-food">
+
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <nav class="navigation">
+          <img src="./img/logo.svg" alt="logo" />
+          <ul class="links-list">
+            <li class="link"><a href="#">Ресторанам</a></li>
+            <li class="link"><a href="#">Курьерам</a></li>
+            <li class="link"><a href="#">Пресс-центр</a></li>
+            <li class="link"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="contact-us">
+          <a href="#"><img src="./img/instagram.svg" alt="Instagram" /></a>
+          <a href="#"><img src="./img/facebook.svg" alt="FaceBook" /></a>
+          <a href="#"><img src="./img/vk.svg" alt="Vkontakte" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="title">Корзина</h3>
+        <button class="modal-btn cancel">&times;</button>
+      </div>
+      <div class="modal-body"><div class="empty-cart">Корзина пустая</div></div>
+      <div class="modal-footer">
+        <span class="span-tag final-price">0 P</span>
+        <div class="buttons">
+          <button class="button finish-order">Оформить заказ</button>
+          <button class="button grey-btn">Отмена</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/wow.min.js"></script>
+  <script src="./scripts/jquery/dist/jquery.min.js"></script>
+  <script src="./scripts/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./scripts/restaraunts-min.js"></script>
+</body>
+
+</html>

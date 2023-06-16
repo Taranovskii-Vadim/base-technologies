@@ -1,0 +1,254 @@
+@media screen and (max-width: 1024px) {
+    .intro {
+      height: 1030px;
+    }
+    .info-intro h3{
+      margin-bottom: 430px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+  /* Подгрузи изображение по меньше чтобы увеличить скорость и прогони через компрессор все картинки */
+  /* главный экран */
+  #btn-menu + label {
+    display: inline-block;
+  }
+  .logo {
+    margin-right: 140px;
+  }
+  .header .list-menu {
+    position: absolute;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    left: 0;
+    width: 100%;
+    height: 460%;
+    justify-content: space-around;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .header .list-menu li {
+    margin-right: 0;
+  }
+  .header .list-menu li a {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+  .header .list-menu li a:last-child {
+    margin-bottom: 5px;
+  }
+  .header .mobile-list-menu {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .header .mobile-list-menu li {
+    margin-right: 0;
+  }
+  .header .mobile-list-menu li a {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+  .header .mobile-list-menu li a:last-child {
+    margin-bottom: 5px;
+  }
+  .intro{
+    height: 830px;
+  }
+  .intro #Circle {
+    top: 720px;
+  }
+  .info-intro {
+    top: 215px;
+    text-align: center;
+  }
+  .info-intro h2,
+  .info-intro h3 {
+    font-size: 45px;
+  }
+  .info-intro h3 {
+    margin-bottom: 185px;
+  }
+  /* about us section  */
+  .info-about-us p {
+    font-size: 14px;
+  }
+  /* our achivmments section */
+  .our-achivments .achivments {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: baseline;
+            align-items: baseline;
+  }
+  .our-achivments .achivments .item {
+    padding-right: 0;
+    margin-left: 15px;
+  }
+  /* best-projects section */
+  .best-projects {
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .best-projects .projects-block p {
+    font-size: 14px;
+  }
+  .project-item {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  /* quote-block section */
+  .slaider-item p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  /* our-clients section */
+  .our-clients img {
+    width: 80px;
+  }
+  .our-clients img:last-child {
+    display: none;
+  }
+  /* blog section */
+  .latest-blog {
+    padding: 0;
+  }
+  .slaider-blog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .slaider-blog-item {
+    margin-right: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  /* contact-us section */
+  .contact-us {
+    padding: 0;
+  }
+  .contact-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .name-email {
+    width: 92.67%;
+  }
+  #title {
+    width: 90%;
+  }
+  #comment {
+    width: 90%;
+  }
+  .contact-info {
+    margin-right: 0;
+    margin-left: 5%;
+  }
+  .contact-form {
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  #send-button {
+    margin-bottom: 30px;
+  }
+  /* .footer-info section */
+  .footer-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding: 0;
+  }
+  .footer-about-us {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-about-us h3 {
+    margin-top: 20px;
+  }
+  .footer-info .icons {
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .last-tweets {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .last-tweets h3 {
+    text-align: center;
+  }
+  .tweet {
+    margin-left: 30px;
+  }
+  .instagram {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+  .instagram h3 {
+    text-align: center;
+  }
+  .insta-row {
+    margin-left: 5px;
+  }
+  .insta-item {
+    margin-right: 0px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 330px) {
+  .our-clients img {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .our-achivments .achivments .item {
+    margin-left: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .project-item {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .insta-item {
+    margin-right: -10px;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .slaider-blog-item {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}

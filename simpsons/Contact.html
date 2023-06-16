@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript"> 
+		imageDir = "http://mvcreative.ru/example/6/2/snow/"; 
+		sflakesMax = 250; 
+		sflakesMaxActive = 250; 
+		svMaxX = 2; 
+		svMaxY = 7; 
+		ssnowStick = 1; 
+		ssnowCollect = 0; 
+		sfollowMouse = 1; 
+		sflakeBottom = 0; 
+		susePNG = 1; 
+		sflakeTypes = 5; 
+		sflakeWidth = 15; 
+		sflakeHeight = 15; 
+	</script> 
+	<script type="text/javascript" src="http://mvcreative.ru/example/6/2/snow.js"></script>
+	<meta charset="utf-8">
+	<title>Контакты</title>
+	<link rel="icon" href="images\Donat.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="images\MainFone.jpg">
+	<div id="Page-wrapper"> 
+		<header id="header">
+			<div class="container">
+				<nav>
+					<img id="Happyfamily1" src="images\family1.png">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="heros.html">Главные герои мультфильма</a></li>
+						<li><a href="Galery.html">Сувениры</a></li>
+						<li><a href="Contact.html">Контакты</a></li>
+					</ul>
+					<img id="Happyfamily2" src="images\family2.png">
+				</nav>
+			</div>
+		</header>
+		<div id="content-wrapper" class="container">
+			<div id="content">
+				<form>
+					<h4>Вопросы и предложения:</h4>
+					<p>Все интересующие вас вопросы вы можете задать в специальной форме приведенной ниже, а также на официальных страничках социальных сетей приведенных в футуре.</p>
+					<p>Опишите вашу проблему<Br>
+						<textarea id="comment" name="yearconst" cols="100" rows="8"></textarea></p>
+						<p>
+							<input type="submit" value="Отправить" onClick="return Formdata(this.form)">
+							<script type="text/javascript">
+								function Formdata(data)
+								{
+									if (!data.yearconst || !data.yearconst.value) {
+										alert ('Fill all fields');
+									}
+									else{
+										alert('Messege send sucsesfully!!!');
+									}
+								}
+							</script>
+							<input type="reset" value="Очистить"></p>
+						</form>
+					</div>
+					<div id="sidebar">
+						<div id="Homeronsidebar"><img id="Happyfamily4" src="images\mainmenu.png"></div>
+						<div class="topchik">
+							<h4>Топ 5 материалов сайта</h4>
+							<div class="tre">Свободное место</div>		
+							<div class="tre">Свободное место</div>
+							<div class="tre">Свободное место</div>
+							<div class="tre">Свободное место</div>
+							<div class="tre">Свободное место</div>
+						</div>
+						<div class="advertisement">
+							<h4>Реклама</h4>
+							<div class="tre">Свободное место</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="container">
+					<footer id="footer">
+						<div>All rights reserved 2018</br> Created by Vadim</div>
+						<a class="social" target="_blank" href="https://www.instagram.com/" ><img alt="instagram" src="icons\PNG\24\social-038-round_instagram.png" ></a>
+						<a class="social" target="_blank" href="https://www.youtube.com/" ><img alt="youtube" src="icons\PNG\24\social-018-round_youtube.png" ></a>
+						<a class="social" target="_blank" href="https://www.twitter.com/" ><img alt="twitter" src="icons\PNG\24\social-003-round_twitter.png" ></a>
+						<a class="social" target="_blank" href="https://www.facebook.com/" ><img alt="facebook" src="icons\PNG\24\social-006-round_facebook.png" ></a>
+					</footer>
+				</div>
+			</div>
+		</body>
+		</html>

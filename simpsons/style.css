@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Mali|Pacifico');
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+img
+{
+    max-width: 100%;
+}
+a
+{
+    display: inline-block;
+}
+
+*
+{
+    font-family: 'Pacifico','Roboto', 'Mali';
+
+    box-sizing: border-box;
+}
+.container
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#page-wrapper
+{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+/*Главное меню*/
+#Happyfamily2
+{
+    position: absolute;
+    bottom: -10px;
+    left: -130px;
+}
+#Happyfamily1
+{
+    position: absolute;
+    bottom: -10px;
+    left: 505px;
+}
+
+nav
+{
+    line-height: 75px;
+
+    position: relative;
+
+    width: 50%;
+    height: 75px;
+    margin: 100px auto 10px;
+
+    background: #ffdd32;
+}
+nav > ul
+{
+    font-size: 0;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+nav > ul > li
+{
+    font-size: 16px;
+
+    display: inline-block;
+
+    list-style: none;
+}
+nav > ul > li a
+{
+    line-height: 75px;
+
+    position: relative;
+    z-index: 999;
+
+    display: inline-block;
+
+    height: 75px;
+    padding: 0 15px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+nav > ul > li a:hover
+{
+    color: #333;
+}
+
+
+/*Главное меню*/
+/*Контент и слайдер*/
+#content-wrapper
+{
+    background-color: #ffdd32;
+}
+
+#content,
+#sidebar
+{
+    float: left;
+
+    padding: 40px;
+}
+#content
+{
+    width: 75%;
+
+    text-align: justify;
+}
+#slider
+{
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.item
+{
+    max-height: 500px;
+}
+
+/*Контент и слайдер*/
+/*сайдбар*/
+#Happyfamily3
+{
+    position: absolute;
+    top: 190px;
+    right: 425px;
+}
+#sidebar
+{
+    float: left;
+
+    width: 25%;
+}
+
+.clear
+{
+    clear: both;
+}
+.topchik
+{
+    margin-top: 15px;
+
+    text-align: center;
+
+    border: 4px solid;
+}
+.tre
+{
+    margin: 15px 15px 15px 15px;
+
+    border: 2px solid;
+}
+.advertisement
+{
+    margin-top: 15px;
+
+    text-align: center;
+
+    border: 4px solid;
+}
+#Homeronsidebar
+{
+    position: relative;
+}
+
+#Happyfamily4
+{
+    position: absolute;
+    top: -38px;
+    right: 25px;
+}
+/*сайдбар*/
+/*футер*/
+footer
+{
+    margin: 0 auto;
+    padding: 40px;
+
+    text-align: left;
+
+    color: #031529;
+    background-color: #50e5e3;
+}
+.social
+{
+    float: right;
+
+    margin-right: 15px;
+
+    color: #ff9700;
+}
+/*футер*/
+/*вторая страница*/
+.family
+{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+#okno
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 850px;
+    height: 300px;
+    margin-top: 425px;
+    margin-left: 400px;
+    padding: 5px;
+
+    text-align: left;
+
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#okno:target
+{
+    display: block;
+}
+#okno1
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 850px;
+    height: 300px;
+    margin-top: 425px;
+    margin-left: 400px;
+    padding: 5px;
+
+    text-align: left;
+
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#okno1:target
+{
+    display: block;
+}
+#okno2
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 850px;
+    height: 300px;
+    margin-top: 425px;
+    margin-left: 400px;
+    padding: 5px;
+
+    text-align: left;
+
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#okno2:target
+{
+    display: block;
+}
+#okno3
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 850px;
+    height: 300px;
+    margin-top: 425px;
+    margin-left: 400px;
+    padding: 5px;
+
+    text-align: left;
+
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#okno3:target
+{
+    display: block;
+}
+#okno4
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 850px;
+    height: 300px;
+    margin-top: 425px;
+    margin-left: 400px;
+    padding: 5px;
+
+    text-align: left;
+
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#okno4:target
+{
+    display: block;
+}
+#okno5
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 850px;
+    height: 300px;
+    margin-top: 425px;
+    margin-left: 400px;
+    padding: 5px;
+
+    text-align: left;
+
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#okno5:target
+{
+    display: block;
+}
+.close
+{
+    font-size: 14pt;
+
+    display: inline-block;
+
+    margin: 10px;
+    padding: 0 12px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    border: 1px solid #00c;
+    background: #f2f2f2;
+}
+.close:hover
+{
+    background-color: #50e5e3;
+ 
+}
+
+#Gomer
+{
+    margin-right: 70px;
+}
+#Marg
+{
+    margin-right: 70px;
+}
+#Bart
+{
+    margin-right: 70px;
+}
+#Liza
+{
+    margin-right: 55px;
+}
+
+textarea
+{
+    width: 800px;
+    height: 250px;
+
+    resize: none;
+}
+/*вторая страница*/
+/*четвертая страница*/
+
+/*четвертая страница*/
+/*третья страница*/
+
+.Pictures
+{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+
+    padding: 5px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    flex-wrap: wrap;
+}
+.Picturesnum
+{
+    margin-right: 16px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+
+    border: 2px solid black;
+}
+
+/*третья страница*/
